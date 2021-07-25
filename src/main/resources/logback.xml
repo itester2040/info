@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- logstash  socket -->
 <configuration>
     <appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
         <destination>127.0.0.1:9200</destination>
@@ -7,12 +9,10 @@
     <root level="INFO">
         <appender-ref ref="stash" />
     </root>
-
-
-
 </configuration>
 
-<!--
+
+<!-- logstash  file
 <configuration>
     <property name="CONSOLE_LOG_PATTERN"
               value="%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) %magenta(%-4relative) - [ %thread{10} ] %cyan(%logger{20}) : %msg%n"/>

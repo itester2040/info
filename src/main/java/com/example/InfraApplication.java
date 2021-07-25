@@ -12,7 +12,6 @@ public class InfraApplication {
 
     public static void main(String[] args) {
 
-        log.info("AAAAAAAAAAAAAAAAAA");
         SpringApplication.run(InfraApplication.class, args);
     }
 

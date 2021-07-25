@@ -20,6 +20,7 @@ public class ScheduleTask {
 
     @Scheduled(fixedDelay = 2000)
     public void task2() {
+
         Log.info("The current data (2) : " + LocalDateTime.now());
     }
 }

@@ -5,6 +5,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
 
+
 @SpringBootTest
 public class Elasticsearch {
 
@@ -19,6 +20,4 @@ public class Elasticsearch {
         blog.setTitle("title.");
         blogEsRepository.save(blog);
     }
-
-
 }
